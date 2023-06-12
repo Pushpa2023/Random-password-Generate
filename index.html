@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Passwod Generated</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body class="body">
+    
+    <section class="container">
+        <div class="head">
+            <h1>javascript <br>password generator <br>project</h1>
+        </div>
+        <div class="subhead">
+        <h1>password generator</h1>
+
+        <div class="pass">
+       <input type="text" class="passbox"id="passBox" disabled>
+        <span class="material-icons"id="copyIcon">content_copy</span>
+    </div>
+
+       <p> <input type="range" min="1" max="30" value="8" class="range" id="inputSlider"></p>
+
+        <h2 class="len">password length <span id="sliderValue"></span></h2>
+
+       <p> <label class="row" for="lowercase">include lowercase letters (a-z)</label>
+          <input type="checkbox" name="lowercase" id="lowercase" checked> </p>
+
+          <p><label class="row" for="uppercase">include uppercase letters(A-Z)</label>
+          <input type="checkbox" name="uppercase" id="uppercase" checked></p>
+
+          <p><label class="row" for="numbers">include numbers letters(0-9)</label>
+          <input type="checkbox" name="numbers" id="numbers" checked></p>
+
+          <p><label class="row" for="symbols">include symbols(@#$%^)</label>
+          <input type="checkbox" name="symbols" id="symbols" checked></p>
+
+          
+
+        <button id="getBtn" class="btn">generate password</button>
+    </div>
+    <script src="script.js"></script>
+    </section>
+</body>
+</html>
